@@ -1,0 +1,245 @@
+/* General */
+
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.4;
+  background-color: white;
+}
+
+.content {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+
+/* Banner */
+
+#banner {
+  height: 30rem;
+  width: 100%;
+  padding-top: 1rem;
+  background: url("../images/glasses-bg.png") 15%/cover no-repeat;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background-color: cadetblue;
+  color: white;
+  margin-right: 2rem;
+}
+
+header img {
+  height: 1.5rem;
+  margin-left: 2rem;
+}
+
+header span {
+  margin-left: 1rem;
+}
+
+nav {
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 1rem 2rem;
+}
+
+#mobileMenu {
+  display: none;
+}
+
+.headline {
+  display: inline-block;
+  background-color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  padding: 1.5rem 5rem;
+  margin-top: 10rem;
+  float: right;
+}
+
+
+/* Keys */
+
+#keys {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.key {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  height: 8rem;
+  margin: 3rem;
+}
+
+.key img {
+  width: 5rem;
+}
+
+#paper {
+  width: 3.5rem;
+}
+
+
+/* Details */
+
+#details {
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.detail {
+  width: 35%;
+}
+
+.detail h2 {
+  color: white;
+  background-color: cadetblue;
+  width: 10rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0.5rem 1.25rem;
+  margin-bottom: 1rem;
+}
+
+#pilosophy {
+  margin-right: 5%;
+}
+
+
+/* Footer */
+
+footer {
+  background-color: azure;
+}
+
+footer img {
+  float: left;
+  height: 1.5rem;
+  margin: 4rem 1rem 4rem 4rem;
+}
+
+footer span {
+  float: left;
+  display: block;
+  margin: 4rem 0;
+}
+
+
+/* Tablet */
+
+@media only screen and (max-width: 1024px) {
+  .content {
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+  }
+
+  #banner {
+    padding: 0;
+    height: 22rem;
+  }
+
+  header {
+    margin: 0;
+  }
+
+  .headline {
+    font-size: 1.33rem;
+    padding: 0.75rem 4rem;
+    margin-top: 5rem;
+    margin-right: 2rem;
+  }
+}
+
+
+/* Swap nav to Menu */
+
+@media only screen and (max-width: 690px) {
+  nav {
+    display: none;
+  }
+
+  #mobileMenu {
+    display: flex;
+  }
+
+}
+
+
+/* Mobile */
+
+@media only screen and (max-width: 500px) {
+
+  #banner {
+    height: 17rem;
+  }
+
+  .headline {
+    width: 100%;
+    margin: 9rem 0 0 0;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  #keys {
+    flex-direction: column;
+    margin: 3.77rem 0;
+  }
+
+  .key {
+    display: block;
+    margin: 0 0 1.54rem 0;
+    height: auto;
+  }
+
+  #truck {
+    margin-bottom: 0;
+  }
+
+  #details {
+    flex-direction: column;
+  }
+
+  .detail {
+    width: 100%;
+    margin: 0 0 4rem 0;
+  }
+
+  .detail h2 {
+    width: 100%;
+    text-align: center;
+    margin: 0 0 1rem 0;
+  }
+
+  .detail p {
+    padding: 0 0.5rem;
+  }
+
+  footer img {
+    display: block;
+    float: none;
+    margin: 4rem auto;
+  }
+
+  footer span {
+    display: none;
+  }
+}
